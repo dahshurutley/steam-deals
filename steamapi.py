@@ -1,13 +1,5 @@
 import requests 
 
-# Create a Program that Returns Data entry of game Titles and Price
-# In regard to user search 
-# Refereance: {"gameID":"146197","steamAppID":"348360","cheapest":"3.14",
-# "cheapestDealID":"Z4c%2BSbJ%2BLxNMisUoEnB%2Fq5b1I%2B2VT%2FVSmZTwO6mQTqs%3D",
-# "external":"Doodle God","internalName":"DOODLEGOD",
-# "thumb":"https:\/\/cdn.cloudflare.steamstatic.com\/steam\/apps\/348360\/capsule_sm_120.jpg?t=1629373614"},
-# TEST
-
 # Output multiple Game titles up to five, let user pick the correct option
 # Run functions below 
 userInput = str(input('\nPlease Enter a Game Title/Series: ')).capitalize()
@@ -58,23 +50,5 @@ def steam1():
         testing()
     else:
         print('No Game Data Found.')
-
-    
-    # def gameOutput():
-    #     if bool(json_data) == False:
-    #         print("No Games Found!")
-    #     else:
-    #         # Json "null" = Python 'None', convert to string and print based on Boolean Values
-    #         if str(json_data[0]['steamAppID']) == 'None':
-    #             print('No SteamAppID found...Cannot Print Link. The Price is')   
-    #         else:
-    #             def func(): 
-    #                 # Itterate in for loop for each key pair in dict. 
-    #                 steam = json_data[0]['external'], json_data[0]['cheapest'], json_data[0]['thumb']
-    #                 for k, v in char.items():
-    #                     steam = str(steam).replace(k, v)
-    #                 steam = str(steam).replace(',', ":", 1)
-    #                 return steam
-
     
 steam1()
